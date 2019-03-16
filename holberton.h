@@ -1,14 +1,17 @@
-#include <stdlib.h>		 
+#ifndef _HOLBERTON_H_
+#define _HOLBERTON_H_
+
 #include <stdlib.h>
-#include <stdarg.h>		 
+#include <stdlib.h>
+#include <stdarg.h>
 #include <stdarg.h>
 
-typedef struct op		
-{		
-	char *c;		
-	void (*f)(va_list valist);		
-} op_t;		
+typedef struct op
+{
+	char *c;
+	void (*f)(va_list valist);
+} op_t;
 
-void _printf(const char * const print, ...);		
+void _printf(const char * const print, ...);
 
 #endif
