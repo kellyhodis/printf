@@ -31,7 +31,6 @@ void _printf(const char * const print, ...)
 		}
 		else
 			_putchar(print[i]);
-
 	}
 	va_end(valist);
 }
