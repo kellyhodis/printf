@@ -11,4 +11,6 @@ typedef struct op
 	void (*f)(va_list valist);
 } op_t;
 
+void _printf(const char * const print, ...);
+
 #endif
