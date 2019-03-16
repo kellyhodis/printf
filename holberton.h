@@ -5,6 +5,7 @@
 #include <stdlib.h>
 #include <stdarg.h>
 #include <stdarg.h>
+#include <unistd.h>
 
 typedef struct op
 {
@@ -13,5 +14,6 @@ typedef struct op
 } op_t;
 
 void _printf(const char * const print, ...);
+int _putchar(char c);
 
 #endif
