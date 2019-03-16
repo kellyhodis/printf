@@ -11,5 +11,4 @@ typedef struct op
 	void (*f)(va_list valist);
 } op_t;
 
-
 #endif
