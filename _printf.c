@@ -30,8 +30,7 @@ void _printf(const char * const print, ...)
 			}
 		}
 		else
-			/* print the character */
-
+			_putchar(print[i]);
 	}
 	va_end(valist);
 }
