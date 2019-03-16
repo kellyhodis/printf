@@ -15,6 +15,7 @@ void _printf(const char * const print, ...)
 	int i, j;
 	va_list valist;
 
+	va_start(valist, print);
 	for (i = 0; print[i] != '\0'; i++)
 	{
 		if (print[i] == '%')
@@ -32,5 +33,5 @@ void _printf(const char * const print, ...)
 			/* print the character */
 
 	}
-
+	va_end(valist);
 }
