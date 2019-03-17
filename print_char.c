@@ -5,11 +5,12 @@
 *
 * Return: nothing
 */
-void print_char(va_list valist)
+int print_char(va_list valist)
 {
 	int c;
 
 	/* initializes c as argument from _printf valist */
 	c = va_arg(valist, int);
-	_putchar(c);
+
+	return(_putchar(c) - 1);
 }

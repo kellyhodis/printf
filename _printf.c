@@ -34,7 +34,7 @@ int _printf(const char *format, ...)
 				{
 					if (format[i + 1] == array[j].c)
 					{
-						array[j].f(valist);
+						n = n + array[j].f(valist);
 						i++;
 						break;
 					}
@@ -47,5 +47,5 @@ int _printf(const char *format, ...)
 			_putchar(format[i]);
 	}
 	va_end(valist);
-	return (i + n);
+	return (i + n - 1);
 }

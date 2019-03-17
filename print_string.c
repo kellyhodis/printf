@@ -6,7 +6,7 @@
 * @valist: argument from _printf
 */
 
-void print_string(va_list valist)
+int print_string(va_list valist)
 {
 	int i;
 	char *s;
@@ -17,4 +17,5 @@ void print_string(va_list valist)
 	{
 		_putchar(s[i]);
 	}
+	return (i - 1);
 }
