@@ -19,7 +19,7 @@ int _printf(const char *format, ...);
 int _putchar(char c);
 void print_string(va_list valist);
 void print_char(va_list valist);
-void print_int(int n);
+int print_int(long long int n);
 void get_num(va_list valist);
 
 #endif
