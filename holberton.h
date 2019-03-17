@@ -9,7 +9,7 @@
 
 typedef struct op
 {
-	char *c;
+	char c;
 	void (*f)(va_list valist);
 } op_t;
 
