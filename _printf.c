@@ -22,7 +22,7 @@ void _printf(const char * const print, ...)
 		{
 			for (j = 0; array[j].c != NULL; j++)
 			{
-				if (string[i + 1] == array[j].c)
+				if (print[i + 1] == array[j].c)
 				{	
 					array[j].f(valist);
 					i++;

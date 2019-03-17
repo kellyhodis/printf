@@ -15,5 +15,7 @@ typedef struct op
 
 void _printf(const char * const print, ...);
 int _putchar(char c);
+void print_string(va_list valist);
+void print_char(va_list valist);
 
 #endif
