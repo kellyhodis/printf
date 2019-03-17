@@ -1,9 +1,9 @@
 #include "holberton.h"
 /**
-* _formatf - formats text
+* _printf - formats text
 * @format: first argument, always a string
 *
-* Return: nothing
+* Return: number of characters
 */
 int _printf(const char *format, ...)
 {
@@ -11,6 +11,7 @@ int _printf(const char *format, ...)
 		{'s', print_string},
 		{'c', print_char},
 		{'i', get_num},
+		{'d', get_num},
 		{'\0', NULL}
 	};
 	int i, j;
@@ -21,12 +22,17 @@ int _printf(const char *format, ...)
 	{
 		if (format[i] == '%')
 		{
-			for (j = 0; array[j].c != '\0'; j++)
+			if (format[i + 1] == '%')
+				_putchar('%');
+			else
 			{
-				if (format[i + 1] == array[j].c)
-				{	
-					array[j].f(valist);
-					i++;
+				for (j = 0; array[j].c != '\0'; j++)
+				{
+					if (format[i + 1] == array[j].c)
+					{
+						array[j].f(valist);
+						i++;
+					}
 				}
 			}
 		}
