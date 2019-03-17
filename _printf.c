@@ -10,6 +10,7 @@ int _printf(const char *format, ...)
 	op_t array[] = {
 		{'s', print_string},
 		{'c', print_char},
+		{'i', get_num},
 		{'\0', NULL}
 	};
 	int i, j;
