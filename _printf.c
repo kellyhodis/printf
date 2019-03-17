@@ -41,12 +41,10 @@ int _printf(const char *format, ...)
 				if (array[j].c == '\0')
 					_putchar(format[i]);
 			}
-			
 		}
 		else
 			_putchar(format[i]);
 	}
 	va_end(valist);
-
 	return (i + n);
 }
