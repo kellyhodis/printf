@@ -15,5 +15,7 @@ int main(void)
     len2 = printf("Let's try to printf a simple sentence.\n");
     _printf("Length:[%d, %i]\n", len, len);
     printf("Length:[%d, %i]\n", len2, len2);
+    len = _printf("Percent:[%%]\n");
+    len2 = printf("Percent:[%%]\n");
     return (0);
 }
