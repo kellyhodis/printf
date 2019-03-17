@@ -1,7 +1,7 @@
 #include "holberton.h"
 /**
-* print_char - prints a char
-* @c: character to print
+* print_char - formats a char
+* @c: character to format
 *
 * Return: nothing
 */
