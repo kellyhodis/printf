@@ -2,11 +2,13 @@
 #define _HOLBERTON_H_
 
 #include <stdlib.h>
-#include <stdlib.h>
-#include <stdarg.h>
 #include <stdarg.h>
 #include <unistd.h>
-
+/**
+* struct op - holds a data type and a function pointer
+* @c: character that indicates data type
+* @f: function pointer
+*/
 typedef struct op
 {
 	char c;
