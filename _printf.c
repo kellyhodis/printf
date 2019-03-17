@@ -14,7 +14,7 @@ int _printf(const char *format, ...)
 		{'d', get_num},
 		{'\0', NULL}
 	};
-	int i, j;
+	int i, j, n = 0;
 	va_list valist;
 
 	va_start(valist, format);
@@ -23,7 +23,10 @@ int _printf(const char *format, ...)
 		if (format[i] == '%')
 		{
 			if (format[i + 1] == '%')
+			{
 				_putchar('%');
+				n = -1;
+			}
 			else
 			{
 				for (j = 0; array[j].c != '\0'; j++)
@@ -41,5 +44,5 @@ int _printf(const char *format, ...)
 	}
 	va_end(valist);
 
-	return (i);
+	return (i + n);
 }
