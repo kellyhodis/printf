@@ -10,7 +10,7 @@ void _printf(const char * const print, ...)
 	op_t array[] = {
 		{'s', print_string},
 		{'c', print_char},
-		{NULL, NULL}
+		{'\0', NULL}
 	};
 	int i, j;
 	va_list valist;
