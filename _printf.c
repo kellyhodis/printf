@@ -1,28 +1,28 @@
 #include "holberton.h"
 /**
-* _printf - prints text
-* @print: first argument, always a string
+* _formatf - formats text
+* @format: first argument, always a string
 *
 * Return: nothing
 */
-void _printf(const char * const print, ...)
+int _printf(const char *format, ...)
 {
 	op_t array[] = {
-		{'s', print_string},
-		{'c', print_char},
+		{'s', format_string},
+		{'c', format_char},
 		{'\0', NULL}
 	};
 	int i, j;
 	va_list valist;
 
-	va_start(valist, print);
-	for (i = 0; print[i] != '\0'; i++)
+	va_start(valist, format);
+	for (i = 0; format[i] != '\0'; i++)
 	{
-		if (print[i] == '%')
+		if (format[i] == '%')
 		{
-			for (j = 0; array[j].c != NULL; j++)
+			for (j = 0; array[j].c != '\0'; j++)
 			{
-				if (print[i + 1] == array[j].c)
+				if (format[i + 1] == array[j].c)
 				{	
 					array[j].f(valist);
 					i++;
@@ -30,7 +30,7 @@ void _printf(const char * const print, ...)
 			}
 		}
 		else
-			_putchar(print[i]);
+			_putchar(format[i]);
 	}
 	va_end(valist);
 }
