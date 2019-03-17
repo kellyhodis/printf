@@ -35,9 +35,13 @@ int _printf(const char *format, ...)
 					{
 						array[j].f(valist);
 						i++;
+						break;
 					}
 				}
+				if (array[j].c == '\0')
+					_putchar(format[i]);
 			}
+			
 		}
 		else
 			_putchar(format[i]);
