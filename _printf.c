@@ -20,7 +20,7 @@ void _printf(const char * const print, ...)
 	{
 		if (print[i] == '%')
 		{
-			for (j = 0; array[j].c != NULL; j++)
+			for (j = 0; array[j].c != '\0'; j++)
 			{
 				if (print[i + 1] == array[j].c)
 				{	
