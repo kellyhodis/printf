@@ -13,9 +13,9 @@ typedef struct op
 	void (*f)(va_list valist);
 } op_t;
 
-int _formatf(const char *format, ...);
+int _printf(const char *format, ...);
 int _putchar(char c);
-void format_string(va_list valist);
-void format_char(va_list valist);
+void print_string(va_list valist);
+void print_char(va_list valist);
 
 #endif
