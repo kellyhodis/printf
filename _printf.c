@@ -8,8 +8,8 @@
 int _printf(const char *format, ...)
 {
 	op_t array[] = {
-		{'s', format_string},
-		{'c', format_char},
+		{'s', print_string},
+		{'c', print_char},
 		{'\0', NULL}
 	};
 	int i, j;
@@ -33,4 +33,6 @@ int _printf(const char *format, ...)
 			_putchar(format[i]);
 	}
 	va_end(valist);
+
+	return (i);
 }
