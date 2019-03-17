@@ -1,9 +1,9 @@
 #include "holberton.h"
 /**
-* _formatf - formats text
+* _printf - formats text
 * @format: first argument, always a string
 *
-* Return: nothing
+* Return: number of characters
 */
 int _printf(const char *format, ...)
 {
@@ -29,7 +29,7 @@ int _printf(const char *format, ...)
 				for (j = 0; array[j].c != '\0'; j++)
 				{
 					if (format[i + 1] == array[j].c)
-					{	
+					{
 						array[j].f(valist);
 						i++;
 					}
