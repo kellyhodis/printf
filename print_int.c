@@ -22,8 +22,8 @@ int print_int(long long int n)
 	if (n / 10)
 		print_int(n / 10);
 	/* prints number */
+
 	len = len + _putchar((n % 10) + '0');
 
 	return (len);
-
 }
