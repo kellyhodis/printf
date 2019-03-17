@@ -16,7 +16,6 @@ int _printf(const char *format, ...)
 	};
 	int i, j, n = 0;
 	va_list valist;
-
 	va_start(valist, format);
 	for (i = 0; format[i] != '\0'; i++)
 	{
