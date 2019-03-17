@@ -8,7 +8,7 @@
  * Return: number of digits
  */
 
-int print_int(long long int n)
+int print_int(long int n)
 {
 	int len = 0;
 
