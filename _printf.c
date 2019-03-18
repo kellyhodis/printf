@@ -25,7 +25,7 @@ int _printf(const char *format, ...)
 			{
 				_putchar('%');
 				i++;
-				n = -1;
+				n--;
 			}
 			else
 			{
