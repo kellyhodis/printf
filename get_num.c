@@ -5,7 +5,7 @@
 *
 * Return: nothing
 */
-void get_num(va_list valist)
+int get_num(va_list valist)
 {
 	int n;
 
@@ -13,5 +13,6 @@ void get_num(va_list valist)
 	n = va_arg(valist, int);
 
 	/* calls function to print the number */
-	print_int(n);
+
+	return (print_int(n, 0));
 }
