@@ -12,7 +12,7 @@ int main(void)
 
 	printf("START OF TEST\n");
 
-	//char
+	/*char*/
 	char c = 'z';
 	char *str = "hello, world";
 	int alen, elen;
@@ -36,7 +36,7 @@ int main(void)
 	printf("Expected   : %c\n", 53);
 	_printf("Actual     : %c\n", 53);
 
-	//strings
+	/*strings*/
 	printf("=====================\n");
 	printf("*****STRINGS*****\n");
 	printf("=====================\n");
@@ -53,7 +53,7 @@ int main(void)
 	printf("Expected   : %sschool\n", "holberton");
 	_printf("Actual     : %sschool\n", "holberton");
 
-	//%%
+	/*%%*/
 	alen = elen = 0;
 	printf("=====================\n");
 	printf("*****PERCENT*****\n");
@@ -65,7 +65,7 @@ int main(void)
 	printf("Expected   : %i\n", elen);
 	_printf("Actual     : %i\n", alen);
 
-	//i
+	/*i*/
 	printf("=====================\n");
 	printf("*****INTEGER*****\n");
 	printf("=====================\n");
@@ -87,7 +87,7 @@ int main(void)
 	printf("Expected   : %i\n", INT_MIN);
 	_printf("Actual     : %i\n", INT_MIN);
 
-	//d
+	/*d*/
 	printf("=====================\n");
 	printf("*****DECIMAL*****\n");
 	printf("=====================\n");
@@ -112,7 +112,7 @@ int main(void)
 	printf("Expected   : %d\n", INT_MIN);
 	_printf("Actual     : %d\n", INT_MIN);
 
-	//u
+	/*u*/
 	printf("=====================\n");
 	printf("*****UNSIGNED*****\n");
 	printf("=====================\n");
