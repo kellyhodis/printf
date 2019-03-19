@@ -6,7 +6,7 @@
  * @n: number to be printed
  */
 
-void print_int(int n)
+void print_int(long int n)
 {
 	/* checks if number has a negative sign and prints it */
 	if (n < 0)
