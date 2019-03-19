@@ -14,5 +14,5 @@ int get_num(va_list valist)
 
 	/* calls function to print the number */
 
-	return (print_int(n, 0));
+	return (print_int(n));
 }
