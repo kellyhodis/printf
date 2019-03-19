@@ -4,6 +4,8 @@
 * print_string - prints a string
 *
 * @valist: argument from _printf
+*
+* Return: number of characters
 */
 
 int print_string(va_list valist)
