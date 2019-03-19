@@ -1,3 +1,5 @@
+
+    
 #include "holberton.h"
 
 /**
@@ -11,18 +13,26 @@
 void print_int(int n)
 {
 
+	unsigned int number;
+
+	number = n;
 	/* checks if number has a negative sign and prints it */
 	if (n < 0)
 	{
 		_putchar('-');
-		n = -n;
+		number = -n;
 	}
+
+	else
+	{
+		number = n;
+	}
+	
 	/* checks if n is greater than 10 and calls function recursively if so*/
-	if (n / 10)
-		print_int(n / 10);
+
+	if (number / 10)
+		print_int(number / 10);
 	/* prints number */
 
-	_putchar((n % 10) + '0');
-
-
+	_putchar((number % 10) + '0');
 }
