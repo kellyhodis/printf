@@ -12,7 +12,7 @@ int main(void)
 
 	printf("START OF TEST\n");
 
-	/*char*/
+
 	char c = 'z';
 	char *str = "hello, world";
 	int alen, elen;
@@ -22,6 +22,8 @@ int main(void)
 	unsigned int uelen = 0;
 	unsigned int ualen = 0;
 	unsigned int m = 113342421;
+	
+		/*char*/
 	printf("=====================\n");
 	printf("*****CHAR*****\n");
 	printf("=====================\n");
