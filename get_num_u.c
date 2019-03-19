@@ -5,20 +5,17 @@
 *
 * Return: nothing
 */
-int get_num(va_list valist)
+int get_num_u(va_list valist)
 {
-	int n, k;
+	int n;
 
 	/* initializes n as an argument from valist */
 	n = va_arg(valist, int);
 
-	k = get_length_i(n);
-
-	if (n <= 0)
-		k++;
 	/* calls function to print the number */
-	print_int(n);
 
-	return (k);
+	print_int_u(n);
+
+	return (0);
 }
 

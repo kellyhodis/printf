@@ -12,5 +12,5 @@ int print_char(va_list valist)
 	/* initializes c as argument from _printf valist */
 	c = va_arg(valist, int);
 
-	return(_putchar(c) - 1);
+	return(_putchar(c));
 }
