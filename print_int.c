@@ -8,21 +8,21 @@
  * Return: number of digits
  */
 
-int print_int(long int n, int len)
+int print_int(long int n)
 {
 
 	/* checks if number has a negative sign and prints it */
 	if (n < 0)
 	{
-		len = len + _putchar('-');
+		_putchar('-');
 		n = -n;
 	}
 	/* checks if n is greater than 10 and calls function recursively if so*/
 	if (n / 10)
-		print_int(n / 10, len + 1);
+		print_int(n / 10);
 	/* prints number */
 
 	_putchar((n % 10) + '0');
 
-	return (len);
+	return (n);
 }
