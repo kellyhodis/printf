@@ -3,6 +3,7 @@
 * op_parse - parses op_t and calls function pointer
 * @format: points to location of format at current count
 * @i: current index of format
+* @valist: va_list parameter
 *
 * Return: count of characters
 */
