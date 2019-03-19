@@ -132,4 +132,6 @@ int main(void)
 	printf("Expected   : %u\n", INT_MIN);
 	_printf("Actual     : %u\n", INT_MIN);
 	printf("=====================\n");
+	
+	return 0;
 }
