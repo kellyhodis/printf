@@ -14,7 +14,8 @@ int print_string(va_list valist)
 	char *s;
 
 	s = va_arg(valist, char*);
-
+	if (!s)
+		s = "(null)";
 	for (i = 0; s[i] != '\0'; i++)
 	{
 		_putchar(s[i]);
