@@ -10,9 +10,6 @@
 int main(void)
 {
 
-	printf("START OF TEST\n");
-
-
 	char c = 'z';
 	char *str = "hello, world";
 	int alen, elen;
