@@ -1,0 +1,45 @@
+.\" Manpage for _printf.
+.\" Contact 668@holbertonschool.com or 526@holbertonschool.com to correct errors or typos.
+.TH man 1 "19 Mar 2019" "1.0.3.96.8.000001" "_printf man page"
+.SH NAME
+_printf \-\- output formatted string
+.SH SYNOPSIS
+_printf
+.I FORMAT [ARGUMENT]...
+.SH DESCRIPTION
+_printf formats output according to different data types.
+Accepted formats:
+
+%c - prints character
+
+%i - prints integer
+
+%d - prints double
+
+%s - prints string
+
+Also:
+
+%%	prints a single %
+
+\\n  prints a new line
+
+\\t  prints a tab
+
+Use:
+
+_printf("%c %s %i %s", 'A', "Holberton student works", 25, "hours a day.");
+
+Will output:
+
+A Holberton student works 25 hours a day.
+
+.SH OPTIONS
+The _printf does not take any options.
+.SH SEE ALSO
+printf
+.SH BUGS
+No known bugs.
+To report bugs, email 526@holbertonschool.com or 668@holbertonschool.com
+.SH AUTHOR
+Kelly Hodis and Alex Mapatelian.
