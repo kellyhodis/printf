@@ -14,7 +14,14 @@ int main(void)
 
 	//char
 	char c = 'z';
+	char *str = "hello, world";
 	int alen, elen;
+	int p = 237482;
+	int n = -328472;
+	int z = 0;
+	unsigned int uelen = 0;
+	unsigned int ualen = 0;
+	unsigned int m = 113342421;
 	printf("=====================\n");
 	printf("*****CHAR*****\n");
 	printf("=====================\n");
@@ -33,7 +40,7 @@ int main(void)
 	printf("=====================\n");
 	printf("*****STRINGS*****\n");
 	printf("=====================\n");
-	char *str = "hello, world";
+
 	alen = elen = 0;
 	printf("Expected   : %s\n", "holberton");
 	_printf("Actual     : %s\n", "holberton");
@@ -63,9 +70,6 @@ int main(void)
 	printf("*****INTEGER*****\n");
 	printf("=====================\n");
 	alen = elen = 0;
-	int p = 237482;
-	int n = -328472;
-	int z = 0;
 	elen = printf("Expected   : %i\n", p);
 	alen = _printf("Actual     : %i\n", p);
 	printf("Expected   : %i\n", elen);
@@ -112,9 +116,7 @@ int main(void)
 	printf("=====================\n");
 	printf("*****UNSIGNED*****\n");
 	printf("=====================\n");
-	unsigned int uelen = 0;
-	unsigned int ualen = 0;
-	unsigned int m = 113342421;
+
 	z = 0;
 	elen = printf("Expected   : %u\n", p);
 	alen = _printf("Actual     : %u\n", p);
