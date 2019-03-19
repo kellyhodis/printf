@@ -25,6 +25,7 @@ int get_num(va_list valist);
 int get_num_u(va_list valist);
 void print_int_u(long int n);
 int get_length_i(int n);
+int op_parse(const char *format, int *i, va_list valist);
 
 #endif
 

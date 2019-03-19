@@ -1,5 +1,13 @@
 #include "holberton.h"
 
+/**
+ * get_length_i - gets a length of a number
+ *
+ * @n: number to be checked
+ *
+ * Return: number of digits
+ */
+
 int get_length_i(int n)
 {
 	unsigned int count = n ? 1 : 0;
@@ -12,7 +20,6 @@ int get_length_i(int n)
 	{
 		tr = n;
 	}
-	
 
 	while (tr / 10)
 	{
@@ -22,4 +29,3 @@ int get_length_i(int n)
 
 	return (count);
 }
-
