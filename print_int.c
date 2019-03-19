@@ -1,5 +1,3 @@
-
-    
 #include "holberton.h"
 
 /**
@@ -27,7 +25,7 @@ void print_int(int n)
 	{
 		number = n;
 	}
-	
+
 	/* checks if n is greater than 10 and calls function recursively if so*/
 
 	if (number / 10)
