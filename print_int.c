@@ -27,11 +27,10 @@ void print_int(int n)
 	}
 	
 	/* checks if n is greater than 10 and calls function recursively if so*/
+
 	if (number / 10)
 		print_int(number / 10);
 	/* prints number */
 
 	_putchar((number % 10) + '0');
-
-
 }
