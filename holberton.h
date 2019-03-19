@@ -16,10 +16,10 @@ typedef struct op
 } op_t;
 
 int _printf(const char *format, ...);
-int _putchar(char c);
-int print_string(va_list valist);
-int print_char(va_list valist);
-int print_int(long int n, int len);
-int get_num(va_list valist);
+int _putchar(char c); 
+void print_string(va_list valist);
+void print_char(va_list valist);
+void print_int(long int n);
+void get_num(va_list valist);
 
 #endif

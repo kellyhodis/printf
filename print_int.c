@@ -8,7 +8,7 @@
  * Return: number of digits
  */
 
-int print_int(long int n, int len)
+void print_int(long int n)
 {
 
 	/* checks if number has a negative sign and prints it */
