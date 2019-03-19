@@ -1,21 +1,45 @@
 .\" Manpage for _printf.
-.\" Contact vivek@nixcraft.net.in to correct errors or typos.
-.TH man 8 "06 May 2010" "1.0" "nuseradd man page"
+.\" Contact 668@holbertonschool.com or 526@holbertonschool.com to correct errors or typos.
+.TH man 1 "19 Mar 2019" "1.0.3.96.8.000001" "_printf man page"
 .SH NAME
 _printf \-\- output formatted string
 .SH SYNOPSIS
-_printf 
-.I format [arguments ...]
+_printf
+.I FORMAT [ARGUMENT]...
 .SH DESCRIPTION
-_printf formats output according to different data types. 
-Accepted format:
+_printf formats output according to different data types.
+Accepted formats:
 
-%%	print a single %
+%c - prints character
+
+%i - prints integer
+
+%d - prints double
+
+%s - prints string
+
+Also:
+
+%%	prints a single %
+
+\\n  prints a new line
+
+\\t  prints a tab
+
+Use:
+
+_printf("%c %s %i %s", 'A', "Holberton student works", 25, "hours a day.");
+
+Will output:
+
+A Holberton student works 25 hours a day.
+
 .SH OPTIONS
-The nuseradd does not take any options. However, you can supply username.
+The _printf does not take any options.
 .SH SEE ALSO
-useradd(8), passwd(5), nuseradd.debian(8) 
+printf
 .SH BUGS
 No known bugs.
+To report bugs, email 526@holbertonschool.com or 668@holbertonschool.com
 .SH AUTHOR
-Vivek Gite (vivek@nixcraft.net.in)
+Kelly Hodis and Alex Mapatelian.
