@@ -4,6 +4,7 @@
 #include <stdlib.h>
 #include <stdarg.h>
 #include <unistd.h>
+#include <stdio.h>
 /**
 * struct op - holds a data type and a function pointer
 * @c: character that indicates data type
@@ -19,7 +20,11 @@ int _printf(const char *format, ...);
 int _putchar(char c);
 int print_string(va_list valist);
 int print_char(va_list valist);
-int print_int(long int n);
+void print_int(int n);
 int get_num(va_list valist);
+int get_num_u(va_list valist);
+void print_int_u(long int n);
+int get_length_i(int n);
 
 #endif
+

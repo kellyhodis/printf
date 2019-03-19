@@ -12,10 +12,12 @@ int _printf(const char *format, ...)
 		{'c', print_char},
 		{'i', get_num},
 		{'d', get_num},
+		{'u', get_num_u},
 		{'\0', NULL}
 	};
 	int i, j, n = 0;
 	va_list valist;
+
 	va_start(valist, format);
 	for (i = 0; format[i] != '\0'; i++)
 	{
@@ -23,9 +25,8 @@ int _printf(const char *format, ...)
 		{
 			if (format[i + 1] == '%')
 			{
-				_putchar('%');
+				n = n + _putchar('%');
 				i++;
-				n--;
 			}
 			else
 			{
@@ -39,12 +40,13 @@ int _printf(const char *format, ...)
 					}
 				}
 				if (array[j].c == '\0')
-					_putchar(format[i]);
+					n = n + _putchar(format[i]);
 			}
 		}
 		else
-			_putchar(format[i]);
+			n = n + _putchar(format[i]);
 	}
 	va_end(valist);
-	return (i + n - 1);
+	return (n);
 }
+
