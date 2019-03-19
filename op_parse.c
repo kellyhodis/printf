@@ -14,7 +14,6 @@ int op_parse(const char *format, int *i, va_list valist)
 		{'c', print_char},
 		{'i', get_num},
 		{'d', get_num},
-		{'u', get_num_u},
 		{'\0', NULL}
 		};
 	int j, n = 0;
