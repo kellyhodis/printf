@@ -23,6 +23,8 @@ int _printf(const char *format, ...)
 				n = n + _putchar('%');
 				i++;
 			}
+			else if (format[i + 1] == '\0')
+				return (-1);
 			else
 				n = n + op_parse(format, m, valist);
 		}
