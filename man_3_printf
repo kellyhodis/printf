@@ -18,6 +18,10 @@ Accepted formats:
 
 %s - prints string
 
+%b - prints integer converted to binary
+
+%u - prints an unsigned integer
+
 Also:
 
 %%	prints a single %
