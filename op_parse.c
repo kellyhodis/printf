@@ -16,6 +16,7 @@ int op_parse(const char *format, int *i, va_list valist)
 		{'d', get_num},
 		{'u', get_u},
 		{'b', get_b},
+		{'r', rev_string},
 		{'\0', NULL}
 		};
 	int j, n = 0;
