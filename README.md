@@ -6,13 +6,15 @@ Implement the C standard library's printf function. It returns the number of cha
 It handles the following specifiers:
 Supported formats:
 
-| Type | Action                   |
-| ---- |:------------------------:|
-| %c   | prints character         |
-| %s   | prints string            |
-| %i   | prints integer           |
-| %d   | prints double            |
-| %u   | prints unsigned integer  |
+| Type | Action                             |
+|:----:|:----------------------------------:|
+| %c   | prints character                   |
+| %s   | prints string                      |
+| %i   | prints integer                     |
+| %d   | prints double                      |
+| %u   | prints unsigned integer            |
+| %b   | prints integer converted to binary |
+
 
 | Function       | Description                                                                                      |
 | -------------- |:-------------------------------------------------------------------------------------------------|
