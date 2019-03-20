@@ -12,7 +12,7 @@ void print_b(int n)
 {
 
 	if (n / 10)
-		print_int(n / 10);
+		print_b(n / 10);
 	/* prints number */
 
 	_putchar((n % 10) + '0');
