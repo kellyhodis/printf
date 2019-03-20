@@ -26,8 +26,8 @@ int op_parse(const char *format, int *i, va_list valist)
 			*i = *i + 1;
 			break;
 		}
-		if (array[j].c == '\0')
-			n += _putchar(format[*i]);
 	}
+	if (array[j].c == '\0')
+		n += _putchar(format[*i]);
 	return (n);
 }
